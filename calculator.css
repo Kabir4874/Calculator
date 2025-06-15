@@ -66,6 +66,8 @@ body{
     border: 0;
     outline: 0;
     font-size: 2rem;
+    background-color: red;
+    color: white;
 }
 .equal{
     background: orange;
