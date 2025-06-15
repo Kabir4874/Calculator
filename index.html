@@ -1,12 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <script>
+      function test() {
+        document.getElementById("demo5").innerHTML = "Paragraph Changed";
+      }
+    </script>
+  </head>
+  <body>
+    <h2>My First JavaScript</h2>
+    <button
+      type="button"
+      onclick="document.getElementById('demo').innerHTML=Date()"
+    >
+      Click
+    </button>
+    <p id="demo"></p>
+    <br />
+    <br />
+    <br />
+    <h2>What can JavaScript Do?</h2>
+    <p id="demo1"></p>
+    <button
+      type="button"
+      onclick="document.getElementById('demo1').innerHTML='Hello JS!'"
+    >
+      Click
+    </button>
+
+    <!-- light bulb  -->
+
+    <br />
+    <br />
+    <h2>Bulb Change</h2>
+    <button onclick="document.getElementById('bulb').src='pic_bulbon.gif'">
+      Turn on
+    </button>
+
+    <img id="bulb" src="pic_bulboff.gif" style="width: 200px" />
+
+    <button onclick="document.getElementById('bulb').src='pic_bulboff.gif'">
+      Turn off
+    </button>
+
+    <!-- large text  -->
+    <h2>Large the text</h2>
+    <p id="demo2">Sample Text</p>
+    <button
+      type="button"
+      onclick="document.getElementById('demo2').style.fontSize='45px'"
+    >
+      Click
+    </button>
+
+    <!-- change color  -->
+    <h2>Change the color</h2>
+    <p id="demo3">Sample Text</p>
+    <button
+      type="button"
+      onclick="document.getElementById('demo3').style.color='red'"
+    >
+      Click
+    </button>
+
+    <!-- script tag  -->
+
+    <p id="demo4"></p>
+
+    <!-- function  -->
+    <h2>Use of function</h2>
+    <p id="demo5">Function Changed</p>
+    <button type="button" onclick="test()">Click</button>
+
+    <!-- function  -->
+    <h2>Use of external js</h2>
+    <p id="demo6">Function Changed</p>
+    <button type="button" onclick="myFunction()">Click</button>
+    <br />
+    <br />
+    <button onclick="window.print()">Print This Page</button>
+    <script>
+      document.getElementById("demo4").innerHTML = "Script Tag";
+      document.write(5 + 6);
+      window.alert("This is Alert");
+      console.log(3 + 5);
+    </script>
+    <script src="script.js"></script>
+  </body>
 </html>
